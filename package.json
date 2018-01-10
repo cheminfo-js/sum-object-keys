@@ -1,6 +1,6 @@
 {
   "name": "sum-object-keys",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Combine objects while summing same keys",
   "main": "lib/index.js",
   "module": "src/index.js",
