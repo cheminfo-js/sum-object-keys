@@ -1,0 +1,43 @@
+{
+  "name": "sum-object-keys",
+  "version": "0.0.0",
+  "description": "Combine objects while summing same keys",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepublishOnly": "rollup -c",
+    "test": "run-s testonly eslint",
+    "test-travis": "eslint src && jest --coverage && codecov",
+    "testonly": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheminfo-js/sum-object-keys.git"
+  },
+  "keywords": [],
+  "author": "Luc Patiny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo-js/sum-object-keys/issues"
+  },
+  "homepage": "https://github.com/cheminfo-js/sum-object-keys#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "codecov": "^3.0.0",
+    "eslint": "^4.15.0",
+    "eslint-config-cheminfo": "^1.10.0",
+    "eslint-plugin-no-only-tests": "^2.0.0",
+    "jest": "^22.0.4",
+    "npm-run-all": "^4.1.2",
+    "rollup": "^0.52.3"
+  }
+}
