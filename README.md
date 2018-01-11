@@ -22,6 +22,11 @@ const result = sum(a,b);
 // result is ...
 ```
 
+```
+sum(target, ...sources);
+```
+
+
 ## [API Documentation](https://cheminfo-js.github.io/sum-object-keys/)
 
 ## License
